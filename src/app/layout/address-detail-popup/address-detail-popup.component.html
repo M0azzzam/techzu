@@ -1,0 +1,69 @@
+<div class="row header">
+  <div class="col-6">
+    <h1 mat-dialog-title>Address Details</h1>
+  </div>
+  <div class="col-6">
+    <a style="float: right; cursor: pointer"><mat-icon (click)="dialogRef.close()">close</mat-icon></a>
+  </div>
+</div>
+
+<form class="row g-3" [formGroup]="addressDetailForm" (ngSubmit)="onAdd(addressDetailForm)">
+  <div class="col-md-6">
+    <label class="form-label">
+      <span
+        style="color: red"
+        *ngIf="!addressDetailForm.valid">*
+      </span>
+      State
+    </label>
+    <input placeholder="State" class="form-control" formControlName="state">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">
+      <span
+        style="color: red"
+        *ngIf="!addressDetailForm.valid">*
+      </span>
+      City
+    </label>
+    <input placeholder="City" class="form-control" formControlName="city">
+  </div>
+  <div class="col-6">
+    <label class="form-label">
+      <span
+        style="color: red"
+        *ngIf="!addressDetailForm.valid">*
+      </span>
+      Address
+    </label>
+    <textarea rows="4" type="text" class="form-control" placeholder="Address" formControlName="address"></textarea>
+  </div>
+  <div class="col-6">
+    <div class="row">
+      <div class="col-12 ">
+        <label class="form-label">
+          <span
+            style="color: red"
+            *ngIf="!addressDetailForm.valid">*
+          </span>
+          Zip Code
+        </label>
+        <input class="form-control" placeholder="Zip Code" formControlName="zip_code">
+      </div>
+      <div class="col-12 mt-3">
+        <label class="form-label">Telephone</label>
+        <input class="form-control" placeholder="Telephone" formControlName="tel_no">
+      </div>
+    </div>
+  </div>
+  <div class="col-12 text-center">
+    <button type="submit" [disabled]="!addressDetailForm.valid" class="btn btn-primary btn-big mb-2 me-2">
+      <mat-icon class="btn-icon">add_circle_outline</mat-icon>
+      <span>Add</span>
+    </button>
+  </div>
+</form>
+
+<!--<div mat-dialog-actions>-->
+<!--  <button mat-button mat-dialog-close>Close</button>-->
+<!--</div>-->

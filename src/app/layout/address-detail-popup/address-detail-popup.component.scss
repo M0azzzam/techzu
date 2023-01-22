@@ -1,0 +1,28 @@
+
+textarea {
+  padding-bottom: 14px;
+}
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn:disabled {
+  background-color: black;
+}
+
+.btn-icon {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: -5px;
+  text-align: center;
+  vertical-align: inherit;
+}
+
+::ng-deep mat-dialog-container {
+  border-top: 20px solid !important;
+  border-bottom: 5px solid;
+  border-left: 5px solid;
+  border-right: 5px solid;
+}

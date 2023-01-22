@@ -1,0 +1,10 @@
+.container {
+  padding: 10px;
+}
+
+::ng-deep mat-dialog-container {
+  border-top: 20px solid !important;
+  border-bottom: 10px solid;
+  border-left: 10px solid;
+  border-right: 10px solid;
+}

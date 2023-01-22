@@ -1,0 +1,34 @@
+@import "vars";
+
+.btn {
+  border-radius: 40px;
+  height: 40px;
+}
+
+.btn-big {
+  padding: 8px 30px;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+  border-color: $color-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+    border-color: $color-primary;
+  }
+
+}
+
+.btn-outline-light {
+  border-color: $color-primary;
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+
+}

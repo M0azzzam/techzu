@@ -1,0 +1,11 @@
+<user-detail-ui
+  [user_id]="user_id"
+  [isNew]="isNew"
+  [isView]="isView"
+  [isEdit]="isEdit"
+  [updateState]="userService.updateState$ | async"
+  (create)="create($event)"
+  (update)="update($event)"
+>
+
+</user-detail-ui>

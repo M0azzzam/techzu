@@ -1,0 +1,52 @@
+@import "../../../../assets/scss/vars";
+
+.user-listing-tabs {
+
+  ul {
+    border-bottom: none;
+
+    li {
+
+      button {
+        background-color: $color-primary;
+        color: $color-white;
+        border: none;
+      }
+
+    }
+
+  }
+
+  .listing-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+}
+
+mat-checkbox {
+  display: initial;
+  background-color: #E7E7E7;
+  color: $color-primary;
+}
+
+.btn-icon {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: -5px;
+  text-align: center;
+  vertical-align: inherit;
+}
+
+.mat-icons {
+  position: relative;
+  top: 3px;
+  font-size: 20px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: $color-primary;
+  color: $color-white;
+  cursor: pointer;
+}

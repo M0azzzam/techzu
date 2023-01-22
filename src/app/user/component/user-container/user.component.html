@@ -1,0 +1,18 @@
+<h2>Users</h2>
+<user-filter-component
+  (filterList)=onFilter($event);
+>
+</user-filter-component>
+
+<user-list-component
+  [users]="users"
+  [pageSize]="usersListTableInformation.pageSize"
+  [usersListTableInformation]="usersListTableInformation"
+  [count]="count"
+  [usersListTableSort]="usersListTableSort"
+  (tableInformation)="usersListTable($event)"
+  (tableSort)="onUsersListTableSort($event)"
+  (pageSizeChanged)="usersPageSizeChanged($event)"
+  (delete)="onDelete($event)"
+>
+</user-list-component>

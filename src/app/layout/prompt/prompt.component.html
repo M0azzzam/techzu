@@ -1,0 +1,19 @@
+<div class="col-12 container">
+  <div mat-dialog-content>
+    <h2>Are you sure you want to modify the document?</h2>
+  </div>
+  <div mat-dialog-actions>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div  class="text-center">
+            <button (click)="confirm()" class="btn btn-primary btn-big mb-2 mr-2">Yes</button>
+            <button (click)="dialogRef.close()" class="btn btn-danger btn-big mb-2">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
